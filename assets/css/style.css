@@ -397,7 +397,7 @@ body {
 }
 
 .flip-card-back {
-  background: linear-gradient(135deg, #0d0816);
+  background: linear-gradient(135deg, #7a58b8);
   color: #fff;
   display: flex;
   flex-direction: column;
