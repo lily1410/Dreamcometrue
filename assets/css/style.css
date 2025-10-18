@@ -135,7 +135,7 @@
   .img2 img {
     width: 880px;
     height: 30vh;
-     border-radius: 15%;
+    border-radius: 15%;
   }
 
   .testimonial-img {
@@ -149,6 +149,7 @@
     width: 100%;
     /* margin-bottom: 2rem !important; */
   }
+
   .first-testimony,
   .col-md-3 {
     width: 100% !important;
@@ -503,7 +504,8 @@ body {
 }
 
 .notify-section {
-  background: #111; /* Dark theme */
+  background: #111;
+  /* Dark theme */
 }
 
 .notify-title {
@@ -542,7 +544,7 @@ body {
 }
 
 .footer {
-  background-color: #111; 
+  background-color: #111;
 }
 
 .footer a:hover {
@@ -553,4 +555,51 @@ body {
   .footer {
     text-align: center;
   }
+}
+
+.button {
+  display: flex;
+}
+
+.box {
+  width: 35px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all .8s;
+  cursor: pointer;
+  position: relative;
+  background-color: #7a58b8;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.box:before {
+  content: "T";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #373142;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform .4s;
+}
+.box:nth-child(2)::before{
+  transform: translateY(-100%);
+  content: "R";
+}
+.box:nth-child(3)::before{
+  content: "U";
+}
+.box:nth-child(4)::before{
+  transform: translateY(-100%);
+  content: "E";
+}
+.button:hover .box:before{
+  transform: translateY(0);
 }
